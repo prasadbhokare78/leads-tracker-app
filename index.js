@@ -1,14 +1,15 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+import { initializeApp } from "https://leads-tracker-app-f2422-default-rtdb.asia-southeast1.firebasedatabase.app/";
 import {
   getDatabase,
   ref,
   push,
   onValue,
   remove,
-} from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
+} from "https://leads-tracker-app-f2422-default-rtdb.asia-southeast1.firebasedatabase.app/";
 
 const firebaseConfig = {
-  databaseURL: process.env.DATABASE_URL,
+  databaseURL:
+    "https://leads-tracker-app-f2422-default-rtdb.asia-southeast1.firebasedatabase.app/",
 };
 
 const app = initializeApp(firebaseConfig);
